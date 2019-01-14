@@ -34,3 +34,34 @@ function nthNumber(number) {
 }
 
 console.log(nthNumber(9)); 
+
+
+function decimalToBinary(input) {
+    if(input <= 0){
+        return '';
+    }
+    let binaryRep = Math.floor(input%2);
+    return decimalToBinary(Math.floor(input/2)) + binaryRep;
+}
+
+console.log(decimalToBinary(25));
+
+function factorial(n){
+    if(n === 0){
+        return 1;
+    }
+    return n * factorial(n-1);
+}
+
+console.log(factorial(52));
+
+[0,1,1,2,3,5,8,13,21,34]
+
+function fibonacci(number) {
+    if(number <= 2) {
+        return 1;
+    }
+    return fibonacci(number -2) + fibonacci(number -1);
+}
+
+console.log(fibonacci(8));
